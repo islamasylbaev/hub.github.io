@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Опросник</title>
+    <style>
+        body {
+            font-family: 'Golos Text', sans-serif;
+            color: #171717;
+        }
+    </style>
+</head>
+<body>
+    <h1>Опросник</h1>
+    <form action="/submit" method="post">
+        <label for="q1">Вопрос 1</label><br>
+        <input type="radio" id="q1a1" name="q1" value="Ответ 1">
+        <label for="q1a1">Ответ 1</label><br>
+        <input type="radio" id="q1a2" name="q1" value="Ответ 2">
+        <label for="q1a2">Ответ 2</label><br>
+        <input type="radio" id="q1a3" name="q1" value="Ответ 3">
+        <label for="q1a3">Ответ 3</label><br>
+        <input type="radio" id="q1a4" name="q1" value="Другое">
+        <label for="q1a4">Другое</label>
+        <input type="text" id="q1other" name="q1other"><br><br>
+
+        <!-- Добавьте аналогичные блоки для остальных вопросов -->
+        
+        <input type="submit" value="Отправить">
+    </form>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</body>
+</html>
